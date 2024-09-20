@@ -40,6 +40,13 @@ body {
     .icon {
         width: 40px;       /* Make icons smaller on mobile */
     }
+    
+    .bocil {
+    display: block;
+    margin: 20px auto;  /* Centers the bocil horizontally */
+    max-width: 200px;   /* Limits the bocil image width */
+    height: auto;       /* Ensures aspect ratio is maintained */
+}
 }
 
 @media (max-width: 480px) {
