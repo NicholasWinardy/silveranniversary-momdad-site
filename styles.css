@@ -109,13 +109,29 @@ body {
     cursor: pointer;
 }
 
-/* Confetti styles */
+/* Confetti area */
 .confetti {
+    position: fixed;      /* Ensure it stays on the screen */
+    top: 0;               /* Starts from the top */
+    left: 0;
     width: 100%;
-    height: 100px;
-    background: url('Confetti.jpg') repeat;
+    height: 100vh;        /* Full viewport height */
+    pointer-events: none; /* Prevent confetti from interfering with other elements */
+    z-index: 1000;        /* Ensure confetti appears on top of other elements */
+    background: url('—Pngtree—realistic multicolored confetti vector png_6953848.png') repeat;
     background-size: cover;
-    display: none;
+    display: none;        /* Hidden initially */
+    animation: confetti-fall 3s linear;
+}
+
+/* Keyframes to make the confetti fall */
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
 }
 
 /* Bocil styling */
@@ -124,6 +140,22 @@ body {
     margin: 20px auto;  /* Centers the cake horizontally */
     max-width: 200px;   /* Limits the cake image width */
     height: auto;       /* Ensures aspect ratio is maintained */
+}
+
+/* Container for video */
+.video-section {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    margin: 20px 0;
+}
+
+/* Video styling */
+.anniversary-video {
+    max-width: 600px;  /* Set a maximum width for the video */
+    width: 100%;       /* Ensure the video is responsive */
+    height: auto;      /* Maintain the aspect ratio */
+    border-radius: 10px; /* rounded corners for a better aesthetic */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* shadow effect */
 }
 
 /* Responsive design */
@@ -136,7 +168,12 @@ body {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
     
-    .anniversary-video {
-        width: 100%;
-    }
+.anniversary-video {
+    max-width: 600px;  /* Set a maximum width for the video */
+    width: 100%;       /* Ensure the video is responsive */
+    height: auto;      /* Maintain the aspect ratio */
+    border-radius: 10px; /* rounded corners for a better aesthetic */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* shadow effect */
+}
+    
 }
