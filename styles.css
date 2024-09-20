@@ -137,16 +137,9 @@ body {
 /* Bocil styling */
 .bocil {
     display: block;
-    margin: 20px auto;  /* Centers the cake horizontally */
-    max-width: 500px;   /* Limits the cake image width */
+    margin: 20px auto;  /* Centers the bocil horizontally */
+    max-width: 500px;   /* Limits the bocil image width */
     height: auto;       /* Ensures aspect ratio is maintained */
-}
-
-/* Container for video */
-.video-section {
-    display: flex;
-    justify-content: center; /* Center the video horizontally */
-    margin: 20px 0;
 }
 
 /* Video styling */
