@@ -15,7 +15,7 @@ body {
 .anniversary-message {
     font-size: 3rem;
     color: #d81b60;
-    margin: 20px 0;
+    margin: 20px 10px;
     position: relative;
     white-space: nowrap; /* Prevents text wrapping */
     display: flex;        /* Flexbox to align items */
@@ -24,8 +24,8 @@ body {
 }
 
 .icon {
-    width: 100px;
-    margin: 0 15px;
+    width: 150px;
+    margin: 0 30px;
     vertical-align: middle;
 }
 
