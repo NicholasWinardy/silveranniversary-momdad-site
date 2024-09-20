@@ -57,6 +57,13 @@ body {
     .icon {
         width: 35px;       /* Adjust icon size accordingly */
     }
+    
+    .bocil {
+    display: block;
+    margin: 20px auto;  /* Centers the bocil horizontally */
+    max-width: 200px;   /* Limits the bocil image width */
+    height: auto;       /* Ensures aspect ratio is maintained */
+}
 }
 
 /* Play greeting button */
@@ -199,5 +206,11 @@ body {
     max-width: 600px;  /* Set a maximum width for the video */
  
    }
+    .bocil {
+    display: block;
+    margin: 20px auto;  /* Centers the bocil horizontally */
+    max-width: 200px;   /* Limits the bocil image width */
+    height: auto;       /* Ensures aspect ratio is maintained */
+}
     
 }
