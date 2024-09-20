@@ -4,35 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Happy Anniversary!</title>
+    <title>Happy Silver Anniversary!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <div class="container">
         <!-- Header with anniversary message -->
-        <h1 class="anniversary-message">
-            <img src="father-icon.png" alt="Father Icon" class="icon">
-            Happy Anniversary, Mom & Dad!
-            <img src="mother-icon.png" alt="Mother Icon" class="icon">
+        <h1 class="anniversary-message" id="anniversaryMessage">
+            <img src="Papa.png" alt="Father Icon" class="icon">
+            Happy 25th Anniversary, Mom & Dad!
+            <img src="Mama.png" alt="Mother Icon" class="icon">
         </h1>
+
+        <!-- Play greeting audio button -->
+        <button class="play-btn" onclick="playGreeting()">Play Greeting</button>
+        <audio id="greetingAudio" src="recordo.m4a"></audio>
 
         <!-- Section to add photos -->
         <div class="photo-section">
-            <h2>Your Memories</h2>
-            <div class="photos">
-                <!-- Example images - replace with your own photos -->
-                <img src="photo1.jpg" alt="Memory 1">
-                <img src="photo2.jpg" alt="Memory 2">
-                <img src="photo3.jpg" alt="Memory 3">
+            <h2>Our Memories</h2>
+            <div class="photos-grid" id="photosGrid">
+                <img src="RomanceUjg1.jpg" alt="Memory 1" class="photo" onclick="openModal(this.src)">
+                <img src="RomanceTgh1.jpg" alt="Memory 2" class="photo" onclick="openModal(this.src)">
+                <img src="RomanceCtr.jpg" alt="Memory 3" class="photo" onclick="openModal(this.src)">
+                <img src="RomanceTgh2.jpg" alt="Memory 4" class="photo" onclick="openModal(this.src)">
+                <img src="RomanceUjg2.jpg" alt="Memory 5" class="photo" onclick="openModal(this.src)">
             </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+            <h2>Anniversary Video</h2>
+            <video controls class="anniversary-video">
+                <source src="Video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <video controls class="anniversary-video">
+                <source src="Video2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
 
         <!-- Cake and Confetti -->
         <div class="festive-area">
-            <img src="cake.png" alt="Cake" class="cake">
-            <div class="confetti"></div>
+            <img src="Bocil.png" alt="Bocil" class="bocil">
+            <div class="confetti" id="confettiArea"></div>
         </div>
+    </div>
+
+    <!-- Modal for full-size image view -->
+    <div id="photoModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="fullImage">
     </div>
 
     <script src="script.js"></script>
