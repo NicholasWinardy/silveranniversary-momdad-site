@@ -13,20 +13,43 @@ body {
 
 /* Anniversary message styling */
 .anniversary-message {
-    font-size: 3rem;
+    font-size: 3rem;       /* Adjusts the size for large screens */
     color: #d81b60;
-    margin: 20px 10px;
-    position: relative;
-    white-space: nowrap; /* Prevents text wrapping */
-    display: flex;        /* Flexbox to align items */
-    align-items: center;  /* Vertically aligns the text and icons */
-    justify-content: center; /* Centers the message */
+    margin: 20px 0;
+    text-align: center;    /* Ensures text is centered */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;       /* Ensures text and icons wrap properly on smaller screens */
+    white-space: normal;   /* Allows the text to wrap to the next line */
 }
 
+/* Smaller icon size for mobile */
 .icon {
-    width: 150px;
-    margin: 0 30px;
+    width: 50px;           /* Adjust size as needed */
+    margin: 0 10px;        /* Add some space between text and icons */
     vertical-align: middle;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .anniversary-message {
+        font-size: 2rem;   /* Reduce font size on smaller screens */
+    }
+
+    .icon {
+        width: 40px;       /* Make icons smaller on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .anniversary-message {
+        font-size: 1.5rem; /* Further reduce font size for very small screens */
+    }
+
+    .icon {
+        width: 35px;       /* Adjust icon size accordingly */
+    }
 }
 
 /* Play greeting button */
