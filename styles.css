@@ -1,0 +1,72 @@
+/* Global styles */
+body {
+    background-color: #fce4ec;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.anniversary-message {
+    font-size: 3rem;
+    color: #d81b60;
+    margin: 20px 0;
+    position: relative;
+}
+
+.icon {
+    width: 50px;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+/* Photo section */
+.photo-section {
+    margin: 30px 0;
+}
+
+.photo-section h2 {
+    font-size: 2rem;
+    color: #880e4f;
+}
+
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.photos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover {
+    transform: scale(1.1);
+}
+
+/* Festive area */
+.festive-area {
+    margin-top: 40px;
+}
+
+.cake {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+.confetti {
+    background: url('confetti.png') repeat;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+}
